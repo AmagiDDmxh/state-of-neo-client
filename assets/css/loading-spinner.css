@@ -1,0 +1,119 @@
+#app-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -16px;
+  text-align: center
+}
+
+#app-loader .loading-neostate-logo {
+  display: block;
+  background-size: contain;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+#app-loader .loading-spinner {
+  opacity: .5;
+  width: 178px
+}
+
+.loading-spinner,.spinner {
+  display: inline-flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute;
+  position: relative;
+  width: 30px;
+  height: 6px
+}
+
+.loading-spinner i.spinner__dot, .spinner i.spinner__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #96A3B6;
+  -webkit-animation: preload-pulse .85s infinite ease-in-out;
+  -o-animation: preload-pulse .85s infinite ease-in-out;
+  animation: preload-pulse .85s infinite ease-in-out
+}
+
+.loading-spinner i.spinner__dot.spinner__dot--one, .spinner i.spinner__dot.spinner__dot--one {
+  -webkit-animation-delay: -.2s;
+  animation-delay: -.2s
+}
+
+.loading-spinner i.spinner__dot.spinner__dot--two, .spinner i.spinner__dot.spinner__dot--two {
+  -webkit-animation-delay: -.1s;
+  animation-delay: -.1s
+}
+
+.spinner--inverted.loading-spinner i.spinner__dot, .spinner.spinner--inverted i.spinner__dot {
+  background: #fff
+}
+
+.loading-spinner .dots {
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  box-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: distribute
+}
+
+.loading-spinner.small {
+  width: 18px
+}
+
+.loading-spinner.small i.spinner__dot {
+  width: 4px;
+  height: 4px
+}
+
+@-webkit-keyframes preload-pulse {
+  0%,100%,80% {
+    opacity: 0;
+    transform: scale(.8)
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@-moz-keyframes pulse {
+  0%,100%,80% {
+    opacity: 0;
+    transform: scale(.8)
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes pulse {
+  0%,100%,80% {
+    opacity: 0;
+    transform: scale(.8)
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
